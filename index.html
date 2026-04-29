@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PuntoCom – Internet para Ramallo</title>
+
+  <!-- Tipografías del logo -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <nav>
+    <div class="logo"><img src="./assets/logopuntocomsinfondo.png" height="50" alt="Logo Punto Com"></div>
+    <ul>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="badge">📡 Punto Com - Ramallo</div>
+    <h1>Internet que <em>conecta</em> tu hogar al mundo</h1>
+    <p class="hero-sub">
+      15 años llevando señal de calidad a los hogares y negocios de Ramallo.
+      Por aire o fibra óptica, siempre cerca tuyo.
+    </p>
+    <div class="cta-group">
+      <a href="#servicios" class="btn btn-primary">Ver planes</a>
+      <a href="#nosotros"  class="btn btn-ghost">Quiénes somos</a>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Descubrí más</span>
+    </div>
+  </section>
+
+  <!-- ── NOSOTROS ──────────────────────────────────────────── -->
+  <section>
+    <div id="nosotros">
+      <div class="about-text">
+        <span class="section-label">Sobre nosotros</span>
+        <h2 class="section-title">15 años conectando Ramallo</h2>
+        <p>
+          Somos <strong>PuntoCom</strong>, una empresa local con raíces profundas en la ciudad
+          de Villa Ramallo. Desde hace más de una década y media, trabajamos día a día para
+          brindarte la mejor conexión a internet en toda la ciudad de Ramallo.
+        </p>
+        <p>
+          Creemos en el servicio cercano, la atención personalizada y la tecnología al
+          alcance de todos. Contamos con dos tecnologías complementarias —<strong>internet
+          por aire</strong> e <strong>internet por fibra óptica</strong>— para adaptarnos
+          a cada zona y necesidad.
+        </p>
+        <p>
+          Con nosotros no sos un número de cliente: sos un vecino al que le queremos dar
+          la mejor experiencia posible.
+        </p>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-num">+15</div>
+          <div class="stat-desc">Años de trayectoria en la ciudad</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">+500</div>
+          <div class="stat-desc">Clientes que confían en nosotros</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3</div>
+          <div class="stat-desc">Zonas cubiertas: Ramallo, Villa Ramallo y Paraíso</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6</div>
+          <div class="stat-desc">Planes disponibles para todo hogar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICIOS ─────────────────────────────────────────── -->
+  <section id="servicios">
+    <div class="services-header">
+      <span class="section-label">Planes y precios</span>
+      <h2 class="section-title">Elegí tu conexión ideal</h2>
+      <p>Dos tecnologías, distintas velocidades. Encontrá el plan que mejor se adapta a tu hogar o negocio.</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active-aire" id="tab-aire"  onclick="switchTab('aire')">📡 Internet por Aire</button>
+      <button class="tab-btn"             id="tab-fibra" onclick="switchTab('fibra')">🔵 Fibra Óptica</button>
+    </div>
+
+    <!-- Panel: por aire -->
+    <div class="plans-panel aire-panel active" id="panel-aire">
+      <div class="plans-grid">
+
+        <div class="plan-card">
+          <div class="plan-icon">📡</div>
+          <div class="plan-speed">6 Mb</div>
+          <div class="plan-type">por aire</div>
+          <div class="plan-price"><span>$</span>15.000<span>/mes</span></div>
+          <div class="plan-cycle">Facturación mensual</div>
+          <ul class="plan-features">
+            <li>Navegación fluida</li>
+            <li>Redes sociales y streaming</li>
+            <li>Soporte técnico local</li>
+            <li>Sin permanencia mínima</li>
+          </ul>
+          <a href="#contacto" class="plan-cta">Contratar</a>
+        </div>
+
+        <div class="plan-card featured">
+          <div class="popular-tag">⭐ Popular</div>
+          <div class="plan-icon">📡</div>
+          <div class="plan-speed">9 Mb</div>
+          <div class="plan-type">por aire</div>
+          <div class="plan-price"><span>$</span>19.000<span>/mes</span></div>
+          <div class="plan-cycle">Facturación mensual</div>
+          <ul class="plan-features">
+            <li>Velocidad mejorada</li>
+            <li>Videollamadas y home office</li>
+            <li>Soporte técnico local</li>
+            <li>Sin permanencia mínima</li>
+          </ul>
+          <a href="#contacto" class="plan-cta">Contratar</a>
+        </div>
+
+        <div class="plan-card">
+          <div class="plan-icon">📡</div>
+          <div class="plan-speed">12 Mb</div>
+          <div class="plan-type">por aire</div>
+          <div class="plan-price"><span>$</span>27.000<span>/mes</span></div>
+          <div class="plan-cycle">Facturación mensual</div>
+          <ul class="plan-features">
+            <li>Máxima velocidad por aire</li>
+            <li>Múltiples dispositivos</li>
+            <li>Soporte técnico local</li>
+            <li>Sin permanencia mínima</li>
+          </ul>
+          <a href="#contacto" class="plan-cta">Contratar</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Panel: fibra óptica -->
+    <div class="plans-panel fiber-panel" id="panel-fibra">
+      <div class="plans-grid">
+
+        <div class="plan-card">
+          <div class="plan-icon">🔵</div>
+          <div class="plan-speed">50 Mb</div>
+          <div class="plan-type">fibra óptica</div>
+          <div class="plan-price"><span>$</span>20.000<span>/mes</span></div>
+          <div class="plan-cycle">Facturación mensual</div>
+          <ul class="plan-features">
+            <li>Alta velocidad simétrica</li>
+            <li>Streaming en Full HD</li>
+            <li>Soporte técnico local</li>
+            <li>Sin permanencia mínima</li>
+          </ul>
+          <a href="#contacto" class="plan-cta">Contratar</a>
+        </div>
+
+        <div class="plan-card featured-fibra">
+          <div class="popular-tag">⭐ Popular</div>
+          <div class="plan-icon">🔵</div>
+          <div class="plan-speed">100 Mb</div>
+          <div class="plan-type">fibra óptica</div>
+          <div class="plan-price"><span>$</span>25.000<span>/mes</span></div>
+          <div class="plan-cycle">Facturación mensual</div>
+          <ul class="plan-features">
+            <li>Velocidad premium</li>
+            <li>Gaming y 4K sin cortes</li>
+            <li>Soporte técnico local</li>
+            <li>Sin permanencia mínima</li>
+          </ul>
+          <a href="#contacto" class="plan-cta">Contratar</a>
+        </div>
+
+        <div class="plan-card">
+          <div class="plan-icon">🔵</div>
+          <div class="plan-speed">300 Mb</div>
+          <div class="plan-type">fibra óptica</div>
+          <div class="plan-price"><span>$</span>32.000<span>/mes</span></div>
+          <div class="plan-cycle">Facturación mensual</div>
+          <ul class="plan-features">
+            <li>Máxima potencia</li>
+            <li>Varios usuarios simultáneos</li>
+            <li>Soporte técnico local</li>
+            <li>Sin permanencia mínima</li>
+          </ul>
+          <a href="#contacto" class="plan-cta">Contratar</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HISTORIA (SECCIÓN OCULTA) ─────────────────────────
+       Para mostrarla: en style.css buscar #historia { display: none }
+       y cambiar a display: block
+  ──────────────────────────────────────────────────────── -->
+  <section id="historia">
+    <span class="section-label">Nuestra historia</span>
+    <h2 class="section-title">De cyber a proveedor de internet</h2>
+    <p style="color:var(--muted); max-width:600px;">
+      Un recorrido de más de 15 años que nos convirtió en la empresa de conectividad
+      de referencia en Ramallo y Villa Ramallo.
+    </p>
+
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-era">Los comienzos</div>
+        <div class="tl-title">🖥️ El cyber que todo empezó</div>
+        <div class="tl-desc">
+          Todo arrancó con una sala de computadoras conectadas a internet en el corazón de Ramallo.
+          En una época donde la conectividad hogareña era un lujo, el local fue el punto de encuentro
+          digital de toda la ciudad. Chicos, adolescentes y adultos llegaban para navegar, jugar en
+          red y hacer trámites online. Así nació la semilla de lo que hoy es PuntoCom.
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-era">Primera expansión</div>
+        <div class="tl-title">🖱️ Tienda de insumos informáticos</div>
+        <div class="tl-desc">
+          Detectando la demanda creciente de hardware y accesorios, el local amplió su propuesta
+          y comenzó a vender insumos informáticos: cartuchos, teclados, mouses, cables y todo lo
+          necesario para mantener una computadora funcionando. La tienda se convirtió en la referencia
+          tecnológica de la zona.
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-era">Segunda expansión</div>
+        <div class="tl-title">🔧 Servicio técnico especializado</div>
+        <div class="tl-desc">
+          Con los años y la confianza ganada, sumamos el servicio de reparación de equipos
+          informáticos. Diagnóstico, formateos, cambio de componentes, recuperación de datos:
+          los vecinos de Ramallo ya tenían un lugar de confianza al que llevar sus computadoras
+          cuando algo fallaba. Nuestros técnicos se especializaron y el boca en boca hizo crecer
+          la clientela de manera exponencial.
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-era">Hoy</div>
+        <div class="tl-title">📡 Proveedores de internet para toda la ciudad</div>
+        <div class="tl-desc">
+          Hoy, PuntoCom tiene como bandera la conectividad hogareña. Llevamos internet por aire
+          y por fibra óptica a los hogares de Ramallo y Villa Ramallo, siendo uno de los proveedores
+          de referencia de la zona. Seguimos vendiendo insumos informáticos y ofrecemos soporte
+          técnico, pero nuestra misión principal es clara: que ningún vecino de Ramallo se quede
+          sin una buena conexión a internet.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ───────────────────────────────────────────── -->
+  <section id="contacto">
+    <span class="section-label">Contacto</span>
+    <h2 class="section-title">¿Querés contratar o consultar?</h2>
+    <p style="color:var(--muted); margin-top:.5rem;">Estamos en Ramallo para atenderte.</p>
+    <div class="contact-card">
+      <p style="color:var(--muted); font-size:1rem; max-width:480px; margin:0 auto;">
+        Contactanos por cualquiera de estos medios y te asesoramos sin compromiso sobre cuál
+        es el plan ideal para tu hogar o negocio.
+      </p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="ci-label">📍 Ubicación</span>
+          <span class="ci-value">Marinero Panno 946</span>
+          <span class="ci-value">Villa Ramallo, Buenos Aires</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">📞 Teléfono</span>
+          <span class="ci-value">3407-480616</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">⏰ Horario</span>
+          <span class="ci-value">Lunes a Sábado</span>
+          <span class="ci-value">9 a 13hs y 16 a 20hs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="logo" style="font-size:1.1rem;"><img src="./assets/logopuntocomsinfondo.png" height="25" alt="Logo Punto Com">
+    </div>
+    <div>© 2026 PuntoCom · Villa Ramallo, Buenos Aires</div>
+    <div style="color:var(--muted);">+15 años conectando la ciudad</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
